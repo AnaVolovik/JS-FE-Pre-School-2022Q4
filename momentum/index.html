@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>momentum</title>
+</head>
+<body>
+  <header class="header">
+    <div class="player">
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <button class="soundOn player-icon mute-button"></button>
+        <input type="range" min="1" max="100" value="20" step="10" class="volume_slider" onchange="setVolume()">
+      </div>
+      <div class="track-name"></div>
+      <div class="player-controls">
+        <div class="current-time">00:00</div>
+        <input type="range" min="1" max="100"  class="play_slider">
+        <div class="total-duration">00:00</div>
+      </div>
+      <ul class="play-list">
+        <li class="song">
+          <p class="song-name">Орган</p>
+          <audio preload="auto">
+            <source src="assets/sounds/1.mp3">
+          </audio>
+        </li>
+        <li class="song">
+          <p class="song-name">Укулеле</p>
+          <audio preload="auto">
+            <source src="assets/sounds/2.mp3">
+          </audio>
+        </li>
+        <li class="song">
+          <p class="song-name">Контрабас</p>
+          <audio preload="auto">
+            <source src="assets/sounds/3.mp3">
+          </audio>
+        </li>
+        <li class="song">
+          <p class="song-name">Фортепиано</p>
+          <audio preload="auto">
+            <source src="assets/sounds/4.mp3">
+          </audio>
+        </li>
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <i class="weather-icon owf"></i>
+        <div class="temperature"></div>
+        <div class="humidity"></div>
+        <div class="wind"></div>
+        <div class="weather-description"></div>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+      <span class="greeting"></span>
+      <input type="text" class="name" placeholder="[Enter name]">
+    </div>
+  </main>
+  <footer class="footer">
+    <button class="change-quote"></button>
+    <div>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+    <div class="footer__rslogo">
+      <p>
+        <a class="link" href="https://rs.school/js-stage0/">
+          <img src="assets/svg/rs_school_js.svg" alt="RS School">
+        </a>
+      </p>
+    </div>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
